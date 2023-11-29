@@ -1,0 +1,4 @@
+<security:http use-expression-driven-security="true">
+    <intercept-url pattern="/protected/**" requires-authentication="ROLE_USER" />
+    <form-login authentication-manager-ref="ldapAuthenticationManager" />
+</security:http>

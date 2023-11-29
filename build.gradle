@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.ldap:spring-ldap-core:2.3.3.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
+    implementation 'org.springframework.security:spring-security-core:5.7.7'
+    implementation 'org.springframework.security:spring-security-ldap:5.7.7'
+    implementation 'org.springframework.security:spring-security-config:5.7.7'
+    implementation 'org.springframework.security:spring-security-web:5.7.7'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.7.0'
+    implementation 'org.springframework.ldap:spring-ldap-core-tiger:2.3.7.RELEASE'
+    implementation 'jakarta.servlet:jakarta.servlet-api:5.0.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.0'
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,14 @@
+<security:authentication-manager alias="ldapAuthenticationManager">
+    <ldap-authentication-provider>
+        <context-source>
+            <server-context-source>
+                <jndi-locator-delegate>
+                    <url>ldap://192.168.1.23:389</url>
+                    <base>dc=siteminderps,dc=exconnetworks,dc=com</base>
+                    <userDn>cn=Administrator,cn=user,dc=exconnetworks,dc=com</userDn>
+                    <password>Q!7e8G$d</password>
+                </jndi-locator-delegate>
+            </server-context-source>
+        </context-source>
+    </ldap-authentication-provider>
+</security:authentication-manager>
