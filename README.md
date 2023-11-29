@@ -22,7 +22,8 @@ These instructions will help you set up and run the project on your local machin
 Make sure you have the following installed on your machine:
 
 - Java Development Kit (JDK) 11 or higher
-- Maven
+- Maven or Gradle
+- IntelliJ Idea
 
 ### Configuration
 
