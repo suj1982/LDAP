@@ -28,10 +28,7 @@ Make sure you have the following installed on your machine:
 ### Configuration
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/suj1982/ldap.git
-
    Open src/main/resources/application.properties and configure LDAP settings:
    spring.ldap.urls=ldap://your-ldap-server:389/
 spring.ldap.base=dc=example,dc=com
@@ -39,9 +36,6 @@ spring.ldap.base=dc=example,dc=com
 
 Usage
 Run the Spring Boot application:
-
-bash
-Copy code
 java -jar target/ldap-authentication-spring-boot-1.0.jar
 Visit http://localhost:8080 in your browser.
 
@@ -58,8 +52,5 @@ If you'd like to contribute to this project, please follow the Contribution Guid
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-javascript
-Copy code
 
 Remember to replace placeholder values like `your-username`, `your-ldap-server`, etc., with your actual information. Additionally, create a `CONTRIBUTING.md` file if you want to specify guidelines for contributions.
