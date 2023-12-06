@@ -34,13 +34,7 @@ import javax.naming.directory.DirContext;
 import javax.naming.directory.Attributes;
 import javax.naming.directory.DirContext;
 
-/**
- * An authenticator which binds as a user.
- *
- * @author Luke Taylor
- *
- * @see AbstractLdapAuthenticator
- */
+
 public class BindAuthenticator extends AbstractLdapAuthenticator {
     // ~ Static fields/initializers
     // =====================================================================================
